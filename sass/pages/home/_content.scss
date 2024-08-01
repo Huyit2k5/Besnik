@@ -1,0 +1,91 @@
+.content {
+    padding-top: 52px;
+    display: flex;
+    align-items: center;
+    gap: 95px;
+    &-left {
+        // max-width: 515px;
+    }
+    &-title {
+        margin-top: 16px;
+        font-size: 62px;
+        font-weight: 700;
+        line-height: calc(75/62);
+        color: #101010;
+    }
+    &-text {
+        margin-top: 22px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: calc(30/18);
+        color: #646464;
+        letter-spacing: -0.18px;
+    }
+    &-image {
+        // width: 695px;
+        // height: 536px;
+        max-width: 128%;
+    }
+    &-form {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+    }
+    &-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        background: linear-gradient(92deg, #3FDA7D 48.17%, #00BE4C 100%);
+        box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.40);
+        border-radius: 0 16px 16px 0;
+        padding: 3px;
+    }
+    &-input {
+        all: unset;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.075px;
+        color: #B1B1B1;
+        padding: 24px;
+        border: 1px solid #3FDA7D;
+        border-radius: 15px 0px 0px 15px;
+    }
+    &-discover {
+        font-weight: 500;
+        line-height: 1.5;
+        color: #fff;
+        padding-left: 22px;
+    }
+    &-img {
+        transform: translateY(15%);
+    }
+    &-signin {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: calc(30/18);
+        color: #838383;
+        margin-top: 51px;
+        span {
+            color: #FF4D20;
+            font-weight: 600;
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .content {
+        &-right {
+            display: none;
+        }
+        &-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-title {
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+}

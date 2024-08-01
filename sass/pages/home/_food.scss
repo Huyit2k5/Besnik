@@ -1,0 +1,77 @@
+.food {
+    margin-top: 113px;
+    &-head {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &-title {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: calc(40/34);
+        letter-spacing: -0.34px;
+        color: #101010;
+    }
+    &-order {
+        margin-top: 84px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-gap: 32px;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: #F6F6F6;
+        border-radius: 24px;
+        width: 240px;
+        height: 130px;
+        padding-right: 16px;
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 30px;
+        max-width: 106px;
+    }
+    &-name {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.24px;
+        color: #171717;
+    }
+    &-starting {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: calc(25/18);
+        color: #969696;
+    }
+    &-price {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: calc(25/18);
+        color: #FF4415;
+    }
+    &-dish {
+        transform: translateX(-15%);
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .food {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-order {
+            grid-template-columns: 1fr;
+        }
+        &-item {
+        }
+    }
+}

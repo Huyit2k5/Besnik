@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Besnik
+        link(rel="stylesheet", href="./styles/app.css")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap' rel='stylesheet')
+    body 
+        .wrapper 
+            .container 
+                include ./views/module/home/_topbar.pug
+                include ./views/module/home/_content.pug
+                include ./views/module/home/_food.pug
+                include ./views/module/home/_order.pug
+                include ./views/module/home/_menu.pug
+                include ./views/module/home/_find.pug
+                include ./views/module/home/_blog.pug
+                include ./views/module/home/_app.pug
+                include ./views/module/home/_popular.pug
+            footer 
+                .container 
+                    include ./views/module/home/_footer.pug

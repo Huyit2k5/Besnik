@@ -1,0 +1,36 @@
+.food 
+    .food-head 
+        .food-left
+            h3.food-title Food near me
+            include ../../_icons/_fire.pug
+        .food-task 
+            include ../../_icons/_arrow.pug
+    .food-order
+        .food-item 
+            .food-info 
+                h4.food-name Pizza
+                .food-status 
+                    p.food-starting Starting
+                    span.food-price $14.00
+            img.food-dish(srcSet="./images/pizza.png 2x", alt="pizza")
+        .food-item 
+            .food-info 
+                h4.food-name Drinks
+                .food-status 
+                    p.food-starting Starting
+                    span.food-price $2.00
+            img.food-dish(srcSet="./images/alcohol.png 2x", alt="pizza")
+        .food-item 
+            .food-info 
+                h4.food-name F. Chiken
+                .food-status 
+                    p.food-starting Starting
+                    span.food-price $4.50
+            img.food-dish(srcSet="./images/chicken.png 2x", alt="pizza")
+        .food-item 
+            .food-info 
+                h4.food-name French F.
+                .food-status 
+                    p.food-starting Starting
+                    span.food-price $8.00
+            img.food-dish(srcSet="./images/fries.png 2x", alt="pizza")

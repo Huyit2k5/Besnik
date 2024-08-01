@@ -1,0 +1,45 @@
+@use "../../abstracts/" as abst;
+.topbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    &-link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: abst.$text-color;
+        letter-spacing: 0.07px;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    &-signup {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #fff;
+        letter-spacing: 0.07px;
+        padding: 13px 15px;
+        border-radius: 12px;
+        background: linear-gradient(180deg, #272727 0%, #171717 46.01%, #101010 100%);
+    }
+    &-cart {
+        transform: translateY(15%);
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .topbar {
+        &-menu {
+            display: none;
+        }
+    }
+}

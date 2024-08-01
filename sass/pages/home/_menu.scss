@@ -1,0 +1,99 @@
+.menu {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: calc(62/52);
+        color: #101010;
+        text-align: center;
+        max-width: 590px;
+        margin-top: 8px;
+    }
+    &-list {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 30px;
+    }
+    &-item {
+        border-radius: 24px;
+        border: 1.2px solid #EFEFEF;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            transform: translateY(-4px);
+        }
+    }
+    &-dish {
+        height: 190px;
+    }
+    &-info {
+        margin-top: 8px;
+        padding-left: 28px;
+        padding-bottom: 10px;
+    }
+    &-header {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #181818;
+    }
+    &-text {
+        font-size: 16px;
+        margin-top: 12px;
+        font-weight: 400;
+        line-height: calc(26/16);
+        letter-spacing: -0.16px;
+        color: #787878;
+        max-width: 287px;
+    }
+    &-status {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+    }
+    &-price {
+        font-size: 20px;
+        font-weight: 500;
+        color: #060606;
+    }
+    &-share {
+        transform: translateX(-10px);
+    }
+    &-button {
+        margin-top: 55px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background-color: #46C266;
+        box-shadow: 0px 10px 20px -10px rgba(58, 186, 90, 0.16);
+        border-radius: 16px;
+        padding-left: 22px;
+        cursor: pointer;
+    }
+    &-see {
+        font-weight: 500;
+        color: #fff;
+    }
+    &-arrow {
+        transform: translateY(10px);
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .menu {
+        &-list {
+            grid-template-columns: 1fr;
+        }
+    }
+}

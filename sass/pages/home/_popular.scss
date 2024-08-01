@@ -1,0 +1,34 @@
+.popular {
+    padding-left: 20px;
+    &-title {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: calc(40/34);
+        letter-spacing: -0.34px;
+        color: #101010;
+    }
+    &-column {
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-gap: 99px;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+    &-link {
+        font-size: 18px;
+        font-weight: 400;
+        color: #666;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .popular {
+        &-column {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
